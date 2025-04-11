@@ -1,0 +1,43 @@
+*{box-sizing: border-box;}
+
+.main {
+    background-image: url("/images/coffee.jpg");
+}
+
+.header, .footer {
+    background-color: #3c2a23;
+}
+
+.coffee-header {
+    font-weight: 700;
+    font-family: Knewave;
+    text-shadow: 4px 4px 4px #000;
+}
+
+
+.coffee-link {
+    text-decoration: none;
+    color: #a7bbec
+}
+
+.coffee-link:hover {
+    color: #f7efe8;
+}
+
+.coffee-title {
+    color: #fff;
+    font-family: Nanum Pen Script;
+    font-weight: 700;
+    text-shadow: 4px 4px 4px #000;
+    text-decoration: none;
+}
+
+.coffee-title:hover {
+    color: #a7bbec;
+}
+
+
+.coffee-desc {
+    font-weight: 700;
+    color: #555;
+}

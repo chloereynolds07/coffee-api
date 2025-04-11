@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="singlePage">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <a class="icon-link icon-link-hover text-light" href="/<%= path %>">
+                    <i class="bi bi-arrow-left"></i>Go Back
+                </a>
+                <div class="col-4">
+                    <img src="<%= coffee.image %>" alt="<%= coffee.title %>" class="img-fluid py-4 single-coffee-img">
+                </div>
+                    <div class="col-5 mt-2">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-dark coffee-desc">
+                                Coffee: <%= coffee.title %>
+                            </li>
+                            <li class="list-group-item list-group-item-dark coffee-desc">Price: $<%= coffee.price %></li>
+                            <li class="list-group-item list-group-item-dark coffee-desc">Total Sales: <%=coffee.totalSales %></li>
+                            <li class="list-group-item list-group-item-dark coffee-desc"><%= coffee.description %></li>
+                        </ul>
+                        <button class="btn btn-light m-3" data-bs-toggle="popover" data-bs-title="<%= coffee.title%>" data-bs-content="Added to Cart!" data-bs-placement="right">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer') %>
